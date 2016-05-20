@@ -9,12 +9,19 @@ content="text/html; charset=UTF-8" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<style type="text/css">
-$(document).ready(function() {
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function() {
 
 	$('#fullpage').fullpage();
 
 });
+</script>
+
+<style type="text/css">
+
 body {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -31,6 +38,7 @@ ul {
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 1;
 	
 }
 li a {
@@ -39,7 +47,8 @@ li a {
     background-color: #ff6600;
 	vertical-align:middle;
 	padding-right: 30px;
-	background-color: #FF6600
+	background-color: #FF6600;
+	width: auto;
 
 }
 div.container {
@@ -52,6 +61,7 @@ div.container {
 	padding: 20px;
 	height: 600px;
 	word-wrap: break-word;
+	z-index: -1;
 }
 body,td,th {
 	font-family: Arial, Helvetica, sans-serif;
@@ -79,6 +89,7 @@ a:active {
 <p>
 <ul>
 <li style="float:left;"><a href="http://niklasbittrich.github.io"> <img src="isotipokern-01.png"/>  </a></li>
+<li style="float:right;padding-top: 40px;"><a href="#Contactanos">Contactanos</a></li>
 <li style="float:right;padding-top: 40px;"><a href="#Productos">Productos</a></li>
 <li style="float:right;padding-top: 40px;"><a href="#Beneficios">Beneficios</a></li>
 <li style="float:right;"><a href="#Nosotros"><img src="logokerninvert-01.png"/></a></li>
@@ -87,15 +98,19 @@ a:active {
 </p>
 <div id="fullpage">
 
-  <div class="section"><div class="container">Some section</div></div>
+	<div class="section"><div class="container">
+    	SECCION 1: ¿QUIENES SOMOS?
+	</div></div>
+	<div class="section"><div class="container">
+    	SECCION 2: BENEFICIOS
+    </div></div>
+	<div class="section"><div class="container">
+    	SECCION 3: PRODUCTOS
+    </div></div>
+	<div class="section"><div class="container">
+    	SECCION 4: CONTACTANOS
+    </div></div>
 
-	<div class="section"><div class="container">bbdubfrjche</div></div>
-
-	<div class="section"><div class="container">fhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgf
-fghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgf.
-fghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgffghfghfghfhgfhgfhgfhgfhgff</div></div>
-
-	<div class="section">Some section</div>
 
 </div>
 
