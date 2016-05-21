@@ -26,6 +26,7 @@ body {
 	margin-left: 10px;
 	margin-right: 10px;
 	background-color: #FEE0CC;
+	overflow:hidden;
 }
 
 ul {
@@ -53,8 +54,9 @@ li a {
 }
 div.container {
 	margin: 0px;
-	background: #FFFFFF;
-	height:auto;
+	background-size:cover;
+	height:100%;
+	width:auto;
 	z-index: -1;
 }
 body,td,th {
@@ -92,17 +94,17 @@ a:active {
 </p>
 <div id="fullpage">
 
-	<div class="section">
-    <img style="height:100%" src="High-Fiber-Nuts-and-Seeds.jpg" />
-    </div>
-	<div class="section">
-    <img style="height:100%;" src="sunflower_seed-wallpaper-1440x900.jpg" />
-    </div>
-	<div class="section">
-     <img style="height:100%" src="pistachios-2.jpg" />
-    </div>
-	<div class="section"><div class="container">
-    	<img src="High-Fiber-Nuts-and-Seeds.jpg" />
+	<div class="section"><div class="container" style="background-image:url(High-Fiber-Nuts-and-Seeds.jpg);">
+    Seccion 1:Nosotros
+    </div></div>
+    <div class="section"><div class="container" style="background-image:url(sunflower_seed-wallpaper-1440x900.jpg);">
+    Seccion 2: Beneficios
+    </div></div>
+	<div class="section"><div class="container" style="background-image:url(pistachios-2.jpg);">
+    Seccion 3: Productos
+    </div></div>
+	<div class="section"><div class="container" style="background-image:url(High-Fiber-Nuts-and-Seeds.jpg);">
+    Seccion 4: Contactanos
     </div></div>
 
 
