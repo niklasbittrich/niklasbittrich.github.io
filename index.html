@@ -27,70 +27,108 @@ body {
 	margin-right: 10px;
 	background-color: #FEE0CC;
 	overflow:hidden;
+	margin-top: 0px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-	padding: 0;
-	width:100%;
-	height: 100px;
-	background-color: #FF6600;
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 1;
+div.header{
 	
+	}
+	
+div.menu{}
+
+#header ul {
+	position:fixed;
+	z-index:1;
+	height: 80px;
+	width: 100%;
+    list-style-type: none;
+	display:block;
+	background-color: #FF6600;
+	margin:0;
+	padding: 10px;
+	top:0;
 }
-li a {
+
+#header ul img {
+	height:100%;
+	width:auto;
+}
+
+
+#menu li a {
     display: block;
-	padding: 8px;
     background-color: #ff6600;
-	vertical-align:middle;
-	padding-right: 30px;
+	padding-right: 20px;
 	background-color: #FF6600;
 	width: auto;
-
+	font-size:18px;
+	line-height: 80px;
 }
 div.container {
 	margin: 0px;
 	background-size:cover;
 	height:100%;
 	width:auto;
-	z-index: -1;
+	z-index:-1;
 }
+
+div.producto {
+	background:#ffc299;
+	border-radius: 40px;
+	height: auto;
+	width: auto;
+	padding: 40px;
+	margin: 100px;
+}
+
 body,td,th {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica;
 	text-align: left;
 }
+
 a:link {
 	color: #ffc299;
 	text-decoration: none;
 }
+
 a:visited {
 	text-decoration: none;
 	color: #ffc299;
 }
-a:hover {
-	text-decoration: none;
+
+@media screen and (max-width:570px) {
+	#menu {
+		display:none;
 }
-a:active {
-	text-decoration: none;
+#header ul {
+	height:160px;
 }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	  #menu li a {
+		  font-size:32px;
+		  font-style:bold;
+}
+}
+
 </style>
 </head>
 
 <body>
-
-<p>
+<div id="header">
 <ul>
-<li style="float:left;"><a href="http://niklasbittrich.github.io"> <img src="logokerninvert-01.png"/>  </a></li>
-<li style="float:right;padding-top: 40px;"><a href="#Contactanos">Contactanos</a></li>
-<li style="float:right;padding-top: 40px;"><a href="#Productos">Productos</a></li>
-<li style="float:right;padding-top: 40px;"><a href="#Beneficios">Beneficios</a></li>
-<li> </li>
+<a href="http://niklasbittrich.github.io"> <img style="vertical-align:middle;float:left;" src="logokerninvert-01.png"/>  </a>
+<div id="menu">
+<li style="float:right;"><a href="#Contactanos">Contactanos</a></li>
+<li style="float:right;"><a href="#Productos">Productos</a></li>
+<li style="float:right;"><a href="#Beneficios">Beneficios</a></li>
+</div>
 </ul>
-</p>
+</div>
+
 <div id="fullpage">
 
 	<div class="section"><div class="container" style="background-image:url(High-Fiber-Nuts-and-Seeds.jpg);">
@@ -101,6 +139,17 @@ a:active {
     </div></div>
 	<div class="section"><div class="container" style="background-image:url(pistachios-2.jpg);">
     Seccion 3: Productos
+    <div class="slide"> 
+    <div class="producto">
+    Producto
+    <br />
+   <img src="../../Downloads/IMG_0993.jpg" height="300px" width="200px" style="position:relative;float:left;padding:10px;" />
+    Las semillas de girasol blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</div>
+    </div>
+        
+	<div class="slide"> Slide 2 </div>
+
+	<div class="slide"> Slide 3 </div>
     </div></div>
 	<div class="section"><div class="container" style="background-image:url(High-Fiber-Nuts-and-Seeds.jpg);">
     Seccion 4: Contactanos
